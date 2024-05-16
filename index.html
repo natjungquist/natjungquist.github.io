@@ -106,9 +106,12 @@
                         introduced me to web development, where I worked on an ASP.NET Webforms application.
                         Working on a web application showed me a way to apply my interests in visual arts developing meaningful services and efficient user experiences.
                         So began my interest in programming to build things that you can interact with directly, specifically web applications.
+                    </p>
+                    <p>
                         In university, I learned more of the theoretical knowledge for the web development concepts that I was putting in practice.
                         My appreciation for object-oriented programming grew. As a highly organized person, the concepts of object-oriented programming (Abstraction, Polymorphism, Inheritance, Encapsulation) just make sense to me and give me opportunities to shine.
-                        With object-oriented code, I can make connections. I believe that making connections between concepts and code and everything in between is the best way to 1) learn, 2) solve problems, and 3) understand the "why" behind things.
+                        With object-oriented code, there are clear relationships between different parts of the program, and one can make connections between them. 
+                        I believe that making connections between concepts and code and everything in between is the best way to 1) learn, 2) solve problems, and 3) understand the "why" behind things.
                     </p>
                     <p>
                         In my time off from school I've learned a lot more about modern ASP.NET Core Web APIs and MVC applications. But aside from coding,
@@ -142,26 +145,77 @@
           <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
           
             <img src="images/guest_browse.png" alt="Image of guest browse" class="img-fluid">
-            <img src="images/guest_selected_car.png" alt="Image of guest selected car" class="img-fluid">
             <img src="images/admin_browse.png" alt="Image of admin browse" class="img-fluid">
             <img src="images/filtering.png" alt="Image filtering" class="img-fluid">
+            <img src="images/guest_selected_car.png" alt="Image of guest selected car" class="img-fluid">
           
           </div>
           <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
             <div class="mb-4">
               <h3>Comp305 Car Dealership Co.</h3>
+              <h5>Motivation</h5>
               <p>
-               Motivation 
+               A final project in school provided an opportunity for us to grasp OOP principles more thoroughly and understand how they can be applied to create software solutions. 
+               I suggested we mimic the Model-View-Controller (MVC) design pattern because I have had previous experience with MVC in .NET, we were building the project from scratch, and we all wanted to gain a better understanding of the widely used architectural framework.
               </p>
               <p>
-              Functional requirements
+                We wanted to build something straightforward and useful for everyday life. 
+                By working on a car dealership system, which is something people often use, we aimed to make a project that showed off our skills while also being something practical. Basically, we saw this project as a way to learn new things, improve what we already knew, and create something that could actually be helpful to people in real life.
+              </p>
+              <h5>Functional Requirements</h5>
+              <p>
+              This project serves as a sophisticated emulation of a car dealership system, catering to the needs of businesses or individuals looking to manage vehicle transactions. 
+              Imagine a bustling car dealership starting its day by printing a list of available cars, a routine task effortlessly integrated into our program. 
+              The backend system leverages the versatility of CSV files to load an initial vehicle inventory and creates corresponding vehicle objects to populate the repository. Each vehicle's availability status is monitored, ensuring accurate representation and efficient management. 
+              Each day begins anew with the input of a fresh list of available vehicles, ensuring accurate and up-to-date information at all times.
               </p>
               <p>
-              Project design
+                Designed with user convenience in mind, our program offers distinct modes tailored to different needs. 
               </p>
               <p>
-              Implementation
+                In the guest mode, users can easily navigate through listing of available cars by employing filters or by searching for a specific vehicle of interest by license plate. 
+                With just a click, users can access detailed information about each car, make a purchase decision, and receive prompt confirmation—all through a user-friendly interface.
               </p>
+              <p>
+              In the admin mode, users are granted comprehensive access to the vehicle repository. Admins can view a listing all cars, including both available and unavailable options. 
+              By selecting individual cars, admins gain insights into specific details, sales status, and daily revenue generated, empowering efficient management and decision-making.             
+            </p>
+            <p>
+                The user interface is simple and straightforward. The images show examples of the page where you can browse and filter the cars. The admin mode offers more details about sales and inventory. The last image is a sample of the screen after the user clicks on a car and has the option to purchase it.</p>
+              <p>
+            <p>
+                Finally, users can quit the app at any time while using it, and a seamless transition between modes within a single session ensures flexibility and real-time updates, further enhancing the user experience.
+            </p>
+            <h5>Project Design</h5>
+              <p>
+                In our project development, we consciously chose not to rely on pre-existing Python frameworks, instead opting to delve into the Model-View-Controller (MVC) design pattern. This decision stemmed from our intention to gain a deeper comprehension of design concepts and refine our coding abilities.
+                By emulating MVC, we sought to dissect its components and grasp its inner workings.
+              </p>
+              <p>
+                At the core of our design lies the incorporation of the state design pattern, governing the flow of our application. 
+                We structured our code around an 'app' object housing a 'runApp' method, which directs the program's behavior according to its present state, whether in guest or admin mode. This approach enhances code organization and allows for future modifications.
+              </p>
+              <p>
+                In our interpretation of MVC, the 'state' and 'handler' classes act as controllers, managing the application's state transitions and coordinating interactions between the user interface and underlying logic. 
+                The graphical user interface (GUI) classes serve as views, rendering data on-screen based on user input and controller directives. 
+                The remaining classes function as models, encapsulating car data and implementing core business logic.
+              </p>
+              <p>
+                We opted to utilize Python due to its versatility, readability, and extensive library support. 
+              </p>
+              <h5>Implementation</h5>
+              <p>
+                As someone passionate about making connections, I was responsible for implementating the controllers and views, the connections between the user interaction and data presentation.
+              </p>
+              <p>
+                Through the adoption of test driven development and agile methodologies, we maintained a focus on quality, collaboration, and responsiveness throughout the whole process.
+                Adopting test driven development ensured that our implementation met the specified requirements and maintained desired functionality. 
+              </p>
+              <p>
+                Agile methodologies involved iterative development cycles, wherein we continuously refined and improved our designs based on feedback and evolving requirements. 
+                Our implementation process prioritized flexibility and adaptability, allowing for seamless updates and adjustments as needed. By iterating on base designs and incorporating feedback from team members and stakeholders, we were able to refine our implementation 
+              </p>
+              <p>Check out our repository on <a href="https://github.com/usd-cs/comp305-final-project-sp24-s01s02-wandasebastiannatalie" target="_blank">GitHub</a></p>
 
 
             </div>
@@ -192,7 +246,7 @@
           <div class="col-md-12 text-center">
             <p class="mb-0">
               <span class="icon-mail_outline d-block h4 text-primary"></span>
-              <span>email address</span>
+              <span>njungquist@sandiego.edu</span>
             </p>
           </div>
           
