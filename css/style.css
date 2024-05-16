@@ -1,4 +1,12 @@
 /* Base */
+.image-container img {
+    display: block;
+    margin-bottom: 20px; /* Adjust the margin value as needed */
+}
+.image-container img:last-child {
+    margin-bottom: 0; /* Remove margin for the last image */
+}
+
 html {
   overflow-x: hidden; }
 
